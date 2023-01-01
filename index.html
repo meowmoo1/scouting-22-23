@@ -1,0 +1,169 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<form
+onsubmit="document.getElementById('myButton').disabled=true;
+document.getElementById('myButton').value='Submitting, please wait...';"
+
+    
+        method="POST"
+        action=https://script.google.com/macros/s/AKfycbz24N9H6B7cjM9KsO-KaKqg9agDNMmq6oesoqSkhIwNxyr1jqQ1coMzish24gcNXlfHIQ/exec
+        xmlns="http://www.w3.org/1999/html">
+        <font size="+3">
+        <hr>
+        <div style="color:red;" class="headline" style="font-size:25pt;"> <b> Prematch </b></div>
+        <hr>
+        <br>
+    <input name="scouter name" type="text" placeholder="scouter name" style="font-size:25pt;" size="15" required>
+
+        <br/>
+        <br/>
+    <input name="team num" type="number" placeholder="team num" style="font-size:25pt;" required>
+        <br />
+        <br />
+        <hr>
+        <div  style="color:red;" class="headline"><b> Autonomous </b></div>
+        <hr>
+        <label for="autonomous on?">autonomous on?</label>
+         <select name="autonomous" id="autonomous" style="font-size:25pt;" onchange="changeDropdown(this.value);">
+        <option value="0">no</option>
+        <option value="1">yes</option>
+         </select>
+         <br>
+         <br>
+    <div style="color:black">high</div>
+    <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="12" name="high (A)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">middle</div>
+    <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="12" name="middle (A)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">low</div>
+    <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="12" name="low (A)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">ground</div>
+    <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="12" name="ground (A)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">missed</div>
+      <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="12" name="missed (A)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+     <br>
+     <br>
+      <label for="parking?">parking?</label>
+    <select name="parking (A)" id="parking (A)" style="font-size:25pt;">
+     <option value="0">no</option>
+     <option value="1">yes</option>
+    </select>
+    <br>
+    <br>
+    <label for="where?">where?</label>
+  <select name="where (A)" id="parking" style="font-size:25pt;">
+    <option value="">didnt park</option>
+   <option value="1">signal zone</option>
+   <option value="0">terminal</option>
+  </select>
+  <hr>
+  <div style="color:red;" class="headline"><b>teleop</b></div>
+  <hr>
+  <div style="color:black">high</div>
+    <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="30" name="high (T)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">middle</div>
+      <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="30" name="middle (T)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">low</div>
+      <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="30" name="low (T)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <br>
+      <div style="color:black">ground</div>
+      <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="30" name="ground (T)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <br>
+      <Br>
+      <div style="color:black">missed</div>
+      <div class="number-input">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+      <input class="quantity" min="0" max="30" name="missed (T)" value="0" type="number" style="font-size:30pt;">
+      <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+      <hr>
+      <div style="color:red;" class="headline"><b>endgame</b></div>
+      <hr>
+      <div style="color:black">high</div>
+      <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="30" name="high (EG)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+        <br>
+        <br>
+        <div style="color:black">middle</div>
+      <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="30" name="middle (EG)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+        <br>
+        <br>
+        <div style="color:black">low</div>
+      <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="30" name="low (EG)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+        <br>
+        <br>
+        <div style="color:black">ground</div>
+        <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="30" name="ground (EG)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+        <br>
+        <br>
+        <div style="color:black">missed</div>
+        <div class="number-input">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" style="font-size:30pt;">-</button>
+        <input class="quantity" min="0" max="30" position="fixed" name="missed (EG)" value="0" type="number" style="font-size:30pt;">
+        <button class="plusminus" type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"  style="font-size:30pt;">+</button>
+        <br>
+        <br>
+        <label for="circuit?">circuit?</label>
+        <select name="circuit" id="circuit" style="font-size:25pt;">
+         <option value="0">no</option>
+         <option value="1">yes</option>
+        </select>
+        <br>
+        <br>
+        <label for="parking?">parking?</label>
+        <select name="parking (EG)" id="parking (EG)" style="font-size:25pt;">
+           <option value="0">no</option>
+           <option value="1">yes</option>
+          </select>
+          <hr>
+        <br />
+        <button  type="submit" id="myButton" value="" style="font-size:30pt;" onsubmit= ><b>submit</b></button>
+    
